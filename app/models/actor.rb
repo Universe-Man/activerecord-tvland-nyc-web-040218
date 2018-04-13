@@ -4,11 +4,10 @@ class Actor < ActiveRecord::Base
 
   has_many :characters
   has_many :shows, through: :characters
-  def change
-    create_table :actors do |a|
+
 
   def change
-    create_table :artists do |a|
+    create_table :actors do |a|
 
       a.string :first_name
       a.string :last_name
